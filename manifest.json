@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "former",
+  "description": "Manipulate form data - save state, clear state, randomize state",
+  "version": "1.0",
+  "permissions": ["tabs", "activeTab"],
+  "browser_action": {
+    "default_title": "Former"
+  },
+  "content_scripts": [{
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["main.js"]
+  }]
+}
